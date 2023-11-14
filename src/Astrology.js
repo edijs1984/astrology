@@ -79,7 +79,7 @@ export default function Astrology() {
           "Content-Type": "application/x-www-form-urlencoded",
         },
       });
-      console.log(result);
+
       setResult(result.data);
     } catch (err) {
       console.log(err);
@@ -244,7 +244,7 @@ export default function Astrology() {
         style={{
           display: "flex",
           flexDirection: "column",
-          alignItems: "flex-start",
+          alignItems: "flex-center",
         }}
       >
         <label style={{ fontFamily: "sans-serif", fontSize: 20 }}>
@@ -265,47 +265,42 @@ export default function Astrology() {
       <div
         style={{
           display: "flex",
-          flexDirection: "row",
+          flexDirection: "column",
           alignItems: "center",
-          padding: "5%",
+          padding: "2%",
         }}
       >
-        <label style={{ fontSize: 15, fontFamily: "sans-serif" }}>
-          Compatibility percent
-        </label>
-        <textarea
-          value={result ? result.compatibility_percentage : ""}
-          readOnly
-          style={{
-            width: 50,
-            height: 20,
-
-            fontSize: 14,
-            fontFamily: "sans-serif",
-          }}
-        />
-        <label style={{ fontSize: 15, fontFamily: "sans-serif" }}>
+        <label
+          style={{ fontSize: 15, fontFamily: "sans-serif", color: "white" }}
+        >
           Your sign
         </label>
         <textarea
           value={result ? result.your_sign : ""}
           readOnly
           style={{
-            width: 70,
+            width: 400,
             height: 20,
-
+            margin: "3%",
             fontSize: 14,
             fontFamily: "sans-serif",
           }}
         />
-        <label style={{ fontSize: 15, fontFamily: "sans-serif" }}>
+        <label
+          style={{
+            fontSize: 15,
+            fontFamily: "sans-serif",
+            color: "white",
+            padding: "2%",
+          }}
+        >
           Partner sign
         </label>
         <textarea
           value={result ? result.your_partner_sign : ""}
           readOnly
           style={{
-            width: 70,
+            width: 400,
             height: 20,
 
             fontSize: 14,
@@ -313,6 +308,28 @@ export default function Astrology() {
           }}
         />
       </div>
+      <label
+        style={{
+          fontSize: 15,
+          fontFamily: "sans-serif",
+          color: "white",
+          padding: "2%",
+        }}
+      >
+        Compatibility percent
+      </label>
+      <textarea
+        value={result ? result.compatibility_percentage : ""}
+        readOnly
+        style={{
+          width: 400,
+          height: 20,
+          justifyContent: "center",
+          alignItems: "center",
+          fontSize: 14,
+          fontFamily: "sans-serif",
+        }}
+      />
     </form>
   );
 }

@@ -27,7 +27,9 @@ function App() {
 
   return (
     <div className="App">
-      <Astrology />
+      <div className="App-header">
+        <Astrology />
+      </div>
     </div>
   );
 }
