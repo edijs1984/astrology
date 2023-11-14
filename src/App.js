@@ -27,9 +27,9 @@ function App() {
 
   return (
     <div className="App">
-      <div className="App-header">
-        <Astrology />
-      </div>
+      {/* <div className="App-header"> */}
+      <Astrology />
+      {/* </div> */}
     </div>
   );
 }
