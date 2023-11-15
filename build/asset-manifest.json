@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/astrology/static/css/main.f855e6bc.css",
-    "main.js": "/astrology/static/js/main.2a49ac0f.js",
+    "main.js": "/astrology/static/js/main.be20bbcf.js",
     "static/js/787.3b17f03f.chunk.js": "/astrology/static/js/787.3b17f03f.chunk.js",
     "index.html": "/astrology/index.html",
     "main.f855e6bc.css.map": "/astrology/static/css/main.f855e6bc.css.map",
-    "main.2a49ac0f.js.map": "/astrology/static/js/main.2a49ac0f.js.map",
+    "main.be20bbcf.js.map": "/astrology/static/js/main.be20bbcf.js.map",
     "787.3b17f03f.chunk.js.map": "/astrology/static/js/787.3b17f03f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.2a49ac0f.js"
+    "static/js/main.be20bbcf.js"
   ]
 }
