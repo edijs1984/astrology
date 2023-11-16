@@ -15,7 +15,7 @@ const inputStyle = {
   background: "none",
   border: "none",
   borderBottom: "1px solid #6536c9",
-  color: "white",
+  color: "#414957",
 };
 
 export default function Astrology() {
@@ -141,7 +141,7 @@ export default function Astrology() {
         </select>
 
         <select
-          value={firstPerson.p_year} // Make sure this should be p_month if you are tracking the month
+          value={firstPerson.p_month} // Make sure this should be p_month if you are tracking the month
           onChange={(e) => handlePChange("p_month", e.target.value)}
           required
           style={inputStyle}
@@ -208,7 +208,7 @@ export default function Astrology() {
           ))}
         </select>
         <select
-          value={secondPerson.s_year} // Make sure this should be p_month if you are tracking the month
+          value={secondPerson.s_month} // Make sure this should be p_month if you are tracking the month
           onChange={(e) => handleSChange("s_month", e.target.value)}
           required
           style={inputStyle}
